@@ -6,16 +6,20 @@ import reportWebVitals from './reportWebVitals';
 import {GlobalStyles} from "./components/styles/GlobalStyles";
 import {theme} from "./components/styles/Theme.styled";
 import {ThemeProvider} from "styled-components";
+import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-      <ThemeProvider theme={theme}>
-          <App/>
-          <GlobalStyles/>
-      </ThemeProvider>
+      <BrowserRouter>
+          <ThemeProvider theme={theme}>
+              <App/>
+              <GlobalStyles/>
+          </ThemeProvider>
+      </BrowserRouter>
+
   </React.StrictMode>
 );
 
