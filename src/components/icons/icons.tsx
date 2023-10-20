@@ -5,7 +5,7 @@ export const Icons: FC<IconsProps> = ({iconId, width='20', height='20', viewBox=
     return (
         <div>
             <svg width={width} height={height} viewBox={viewBox} fill="none" xmlns="http://www.w3.org/2000/svg">
-                <use xlinkHref={`${iconsSprite}=${iconId}`}/>
+                <use xlinkHref={`${iconsSprite}#${iconId}`}/>
             </svg>
         </div>
     );

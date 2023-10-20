@@ -16,12 +16,12 @@ export const Button = styled.button<ButtonProps>`
   
   ${props=>props.btnType === 'outlined' && css<ButtonProps>`
     background-color: transparent;
-    outline: 2px solid ${props=>props.color || theme.colors.primary};
-    color: ${props=>props.color || theme.colors.primary};
+    outline: 2px solid ${props=>props.color };
+    color: ${props=>props.color };
   `}
   
   ${props=>props.btnType === 'primary' && css<ButtonProps>`
-    background-color: ${props=>props.color || theme.colors.primary} ;
+    background-color: ${props=>props.color } ;
     color: #fff;
   `}
   

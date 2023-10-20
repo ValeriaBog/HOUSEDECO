@@ -1,26 +1,30 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import {Nav} from "../../components/nav/nav";
 import styled from "styled-components";
 import {Logo} from "../../components/logo/logo";
+import s from './header.module.css'
+import {StyledContainer} from "../container/container";
+import {theme} from "../../components/styles/Theme.styled";
 
 const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  background-color: ${theme.colors.gradientBackground};
+  z-index: 999;
 `
-
-
 
 export const Header = () => {
     return (
         <>
-            <StyledHeader>
-                <Logo/>
-                <Nav/>
+                <StyledHeader>
+                    <Logo className={s.logo}/>
+                    <Nav/>
+                </StyledHeader>
 
-            </StyledHeader>
+
         </>
 
     );

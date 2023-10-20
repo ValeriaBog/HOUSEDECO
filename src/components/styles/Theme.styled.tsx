@@ -1,10 +1,10 @@
 export const theme = {
     colors: {
-        accentColor: '#e4bb7d',
-        grayColor: '#848484',
+        primaryColor: '#fff',
+        secondaryColor: '#000',
+        accentColor: '#28553F',
         backgroundColor: '#1d1d1d',
-        white: '#fff',
-        primary: '#848484',
+        gradientBackground: 'rgba(0,0,0,0.78)'
 
     },
     media: {

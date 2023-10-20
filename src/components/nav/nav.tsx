@@ -22,6 +22,7 @@ export const StyledNav = styled.nav`
   justify-content: space-around;
   margin-right: 40px;
   gap: 10px;
+  font-size: 18px;
 
   & > a {
     color: white;
