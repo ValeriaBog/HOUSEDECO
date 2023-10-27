@@ -75,6 +75,8 @@ const StyledContainer = styled.div`
 const StyledRow = styled.div`
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  padding: 0 100px;
 `
 const StyledColumn = styled.div`
   display: flex;

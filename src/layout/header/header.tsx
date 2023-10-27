@@ -3,8 +3,8 @@ import {Nav} from "../../components/nav/nav";
 import styled from "styled-components";
 import {Logo} from "../../components/logo/logo";
 import s from './header.module.css'
-import {StyledContainer} from "../container/container";
 import {theme} from "../../components/styles/Theme.styled";
+import {ContactsHeader} from "../../components/contacts-header/contacts-header";
 
 const StyledHeader = styled.header`
   display: flex;
@@ -15,13 +15,20 @@ const StyledHeader = styled.header`
   background-color: ${theme.colors.gradientBackground};
   z-index: 999;
 `
-
+const StyledContainer= styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+`
 export const Header = () => {
     return (
         <>
                 <StyledHeader>
                     <Logo className={s.logo}/>
-                    <Nav/>
+                    <StyledContainer>
+                        <ContactsHeader/>
+                        <Nav/>
+                    </StyledContainer>
                 </StyledHeader>
 
 

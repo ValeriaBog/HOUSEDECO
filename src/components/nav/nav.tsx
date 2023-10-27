@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 export const Nav = () => {
     return (
-        <StyledNav>
+        <StyledNav aria-label="Навигация">
             <Link to={''}>Каталог</Link>
             <Link to={''}>Акции</Link>
             <Link to={''}>Блог</Link>

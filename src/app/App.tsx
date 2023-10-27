@@ -3,10 +3,10 @@ import './App.css';
 import {Header} from "../layout/header/header";
 import {Main} from "../components/main/main";
 import {StyledContainer} from "../layout/container/container";
-import {Title} from "../components/styles/title.styled";
 import {Advantages} from "../components/advantages/advantages";
+import {Products} from "../components/products/products";
 
-function App() {
+export const App = () => {
     return (
         <div>
             <StyledContainer>
@@ -16,8 +16,11 @@ function App() {
             <StyledContainer>
                 <Advantages/>
             </StyledContainer>
+            <StyledContainer>
+                <Products/>
+            </StyledContainer>
         </div>
     );
 }
 
-export default App;
+
