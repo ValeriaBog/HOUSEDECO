@@ -27,5 +27,6 @@ const StyledCards = styled.div`
   display: grid;
   grid-template-columns: [start] 250px [line2] 650px [line3] 600px [end];
   grid-template-rows: [row1-start] 15rem [row1-end] 30vh [last];
+  background: transparent;
 `
 
